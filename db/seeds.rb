@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+more_movies = [
+  {:title => 'Aladdin', :rating => 'G', :release_date => '25/11/1992'},
+  {:title => 'When Harry Met Sally', :rating => 'R', :release_date => '21/06/1989'},
+  {:title => 'The Help', :rating => 'PG-13', :release_date => '10/8/2011'},
+  {:title => 'Raiders of the Lost Arc', :rating => 'PG', :release_date => '12/6/1981'}
+  ]
+more_movies.each do |movie|
+  Movie.create!(movie)
+end
+
